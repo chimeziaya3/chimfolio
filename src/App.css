@@ -1,0 +1,353 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+.app{
+	width: 100vw;
+
+}
+
+.navbar{
+	display: flex;
+	flex-direction: column;
+	max-width: 100vw;
+	width: 100%;
+	background-color: rgba(0,0,0, .0);
+	margin: 0;
+	position: relative;
+	color: white;
+	font-family: 'Work Sans', sans-serif;
+	position: fixed;
+	z-index: 999;
+}   
+
+.logoContainer{
+	padding-top: 30px;
+	margin: 0 auto;
+}
+
+.logo{
+	text-align: center;
+	color: white;
+	margin: 0 auto;
+	font-family: 'Work Sans', sans-serif;
+	
+	width: 40px;
+	padding: 20px;
+	cursor: pointer; 
+}
+.logo:after{
+	content: '';
+	display: block;
+	position: absolute; 
+	top: 4vh;
+	margin: 0 auto;
+	left: 0;
+	right: 0; 
+	border: 1.2px solid white;
+	text-align: center;
+	width: 60px; 
+	height: 60px; 
+	border-radius: 50%;
+	animation-name: flip;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out; 
+}
+
+.logo:hover{
+	animation-name: flip;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+.navContainer{
+	display:  none;
+	flex-direction: column;
+	text-align: center;
+	margin-top: 220px;
+}
+
+/*------------LANDING PAGE-------------------  */
+
+.landingPage{
+	background-image: url('./assets/landing.jpg');
+	width: 100vw;
+	height: 100vh;
+}
+.welcomeContainer{
+	/*position: absolute;*/
+	margin: 0 auto;
+	/*margin-top: 300px;*/
+	text-align: center;
+	padding-top: 30vh;
+	/*margin-top: 40vh;*/
+}
+.welcomeNote{
+	/*height: 100px;
+	width: 100px;*/
+	margin: 0 auto;
+	text-align: center;
+	font-family: 'Nunito', sans-serif;
+	font-size: 40pt;
+	color: white;
+	/*animation-name: changeLetter;
+	animation-duration: 3s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in*/;
+
+}
+
+.chimFolio{
+	margin: 0;
+	color: white;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 8pt;
+}
+/*------------------SKILLS---------------  */
+
+.skillsPage{
+	background-color: rgb(249, 246, 244);
+	color: rgb(73, 73, 73);
+	width: 100vw;
+	height: 100%;
+}
+.skillsTypeContainer{
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 10%;
+}
+.skillsTitle{
+	margin: 0 ;
+	font-family: 'Nunito', sans-serif;
+	text-align: center;
+	padding-top: 5%;
+}
+.skillsPhrase{
+	font-size: 8pt;
+	font-family: 'Work Sans', sans-serif;
+	text-align: center;
+	margin: 10px;
+}
+.skillsContainer{
+	display: flex;
+	flex-direction: column;
+}
+.skillBox{
+	padding: 25px 60px;
+	flex: 1;
+}
+.skill{
+	flex: 1;
+	font-family: 'Nunito', sans-serif;
+}
+.skillText{
+	font-family: 'Work Sans', sans-serif;
+}
+.fa-paint-brush{
+	content: 'f1fc';
+	color: rgb(186, 70, 70);
+}
+.fa-desktop{
+	content: 'f108';
+	color: rgb(186, 70, 70);
+}
+.fa-code{
+	content: 'f121';
+	color: rgb(186, 70, 70);
+}
+.doughnutContainer{
+	display: flex;
+	margin: 0 auto;
+}
+.fa-arrow-down{
+	content: 'f063';
+	color: white;
+	position: absolute;
+	/*margin: 0 auto;*/
+	top: 93vh;
+	left: 50%;
+	animation-name: blink;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+/* .sliding-middle-out {
+	display: inline-block;
+	position: relative;
+	padding-bottom: 3px;
+}
+.sliding-middle-out:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 3px;
+	width: 0px;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+.sliding-middle-out:hover:after {
+	width: 100%;
+	background-color: rgb(56, 56, 54);
+} */
+
+
+/*---------------PROJECTS--------------  */
+.projectPage{
+	margin: 0;
+	position: relative;
+	height: 100vh;
+	width: 100vw;
+	background-color: rgb(241, 236, 236);
+}
+.carousel{
+	width: 100%;
+	margin: 0 auto;
+}
+/*How to change color of arrows on react-slick  */
+.slick-prev:before,.slick-next:before{
+	color: black;
+}
+.carouselContainer {
+	  text-align: center;
+	  padding-top: 10%;
+	margin: 0;
+	/* position: absolute; */
+	border: 0;
+	/* height: 100vh; */
+	/* padding: 40px;  */
+  	width: 100%;
+  	color: #333;
+  	background: transparent;
+}
+button{
+	margin: 0 auto;
+}
+.slide{
+  	margin: 0 auto;
+  	display: flex;
+	flex-direction: column;
+}
+img{
+	flex: 1;
+	margin: 0 auto;
+	height: auto;
+	width: 200px;
+}
+.workSlide{
+	flex: 1;
+}
+.project-title{
+	font-family: 'Nunito', sans-serif;
+	margin: 0;
+	padding-bottom: 20px; 
+}
+.title{
+	font-family: 'Nunito', sans-serif;
+}
+.subTitle{
+	
+	text-align: center;
+	margin: 0 auto;
+	font-family: 'Nunito', sans-serif;
+}
+.subTitle:before{
+	content: '';
+	display: inline-block;
+	border: 3px solid rgb(186, 70, 70);
+  border-radius: 50%;
+  margin-right: 7px;
+}
+
+.projectDescription{
+  font-family: 'Work Sans', sans-serif;
+  margin: 10px 50px;
+}
+
+/* .slick-track{
+	width: 100vw;
+} */
+
+/*---------------- CONTACT ---------------  */
+
+.contactPage{
+	position: relative;
+	width: 100vw;
+	height: 400px;
+	background-color: rgb(186, 70, 70);
+	color: white;
+	text-align: center;
+}
+.contactInfoContainer{
+	padding-top: 5%; 
+}
+.contactTitle{
+	margin: 0;
+	padding-top: 40px ;
+	font-family: 'Nunito', sans-serif;
+}
+.contactText{
+	font-family: 'Work Sans', sans-serif;
+	padding: 0 60px;
+}
+.contactEmail{
+	font-family: 'Work Sans', sans-serif;
+}
+
+/*--------------ANIMATIONS------------  */
+@keyframes blink{
+	0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}
+@keyframes flip{
+	0% {transform: rotateY(0deg);}
+	50% {transform: rotateY(180deg);}
+	100% {transform: rotateY(360deg);}
+}
+@keyframes changeLetter{
+	0% {content: "dded";}
+	50% {content: "deef";}
+	100% {content: "deefh";}
+}
+
+
+/* *************DESKTOP********************* */
+@media only screen and (min-width: 1000px){
+	.navContainer{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin-top: 220px;
+	}
+	.logo:after{
+		/* right: 47.5vw; */
+	}
+	.skillsPage{
+		height: 100vh;
+	}
+	.skillsContainer{
+		flex-direction: row;
+	}
+/* ************LANDIN PAGE********** */
+	.welcomeNote{
+		font-size: 70pt;
+	}
+	.chimFolio{
+		font-size: 12pt;
+	}
+/* *************SKILLS*************** */
+	.skillsTitle{
+		font-size: 30pt;
+	}
+	.skillsPhrase{
+		font-size: 12pt;
+	}
+/* ************PROJECTS************* */
+	.project-title{
+		font-size: 30pt;
+	}
+/* **********CONTACT************ */
+
+}
